@@ -39,10 +39,10 @@ To run the CUDA implementation of the standard deviation calculation, follow the
 
 ### Running the Program
 
-- Run the compiled CUDA program. You can specify the dataset size as a command-line argument. For example, to generate a dataset of 5,000,000 values and calculate standard deviation:
+- Run the compiled CUDA program. You can specify the dataset size and number of threads per block as a command-line argument. For example, to generate a dataset of 5,000,000 values and calculating standard deviation using 64 threads per block:
 
     ```bash
-    ./std_cuda 5000000
+    ./std_cuda 5000000 64
     ``````
 
 - The program will generate a pseudo-random dataset of specified size, calculate its standard deviation, and output result along with execution time.
